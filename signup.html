@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Signup</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                background-image: url( bkt.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;  
+            }
+            h1{
+                text-align: center;
+            }
+            input{
+                width: 90%;
+                padding: 5px;
+                margin-top: 2px;
+            }
+            .signupbox{
+                width: 300px;
+                height: 750px;
+                padding: 25px;
+                border-radius: 20px;
+                background-color:rgb(230, 186, 136);
+                text-align: center;
+                font-size: large;
+                font-weight: bold;   
+            }
+            button{
+                text-align: center;
+                width:95px;
+                height:40px;
+            }
+        </style>        
+        <body>
+            <div class="signupbox">
+                <h1>SIGNUP</h1>
+                <form id="myform">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" required><br><br>
+                    <label for="phoneno">Phonenumber</label><br>
+                    <input type="text" id="phoneno" required><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" required><br><br>
+                    <label>Gender</label>
+                    <select id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <br><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" required><br><br>
+                    <label for="pincode">Pincode</label><br>
+                    <input type="text" id="pincode" required><br><br>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" required><br><br>
+                    <label for="state">State</label><br>
+                    <input type="text" id="state" required><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="text" id="password" required><br><br>
+                    <label for="confirmpassword">Confirm Password</label><br>
+                    <input type="text" id="confirmpassword" required><br><br>
+                     <button type="signup">Save</button>
+                </form>
+                </div>
+                <script>
+                    if(confirmpassword === password){
+                        console.log("password correct")
+                    else{
+                        alert("Password are not same")
+                    }
+                    }
+                    document.getElementById("myform").addEventListener("focus",function({
+                    console.log("Input focused")    
+                    }));
+                </script>
+        </body>
+    </head>
+</html>

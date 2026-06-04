@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link href="sty.css" rel="stylesheet">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Job Registration</h1>
+        </div>
+        <div class="row">
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        </div>  
+        <table>
+            <tr>
+                <th>Name</th>
+                <input type="text" id="name">
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone number</th>
+                <th>Language known</th>
+            </tr>
+        </table>
+        <div class="row">
+        <label>Job Type</label>
+        <select id="job">
+            <option>Software Developer</option>
+            <option>Graphic Designer</option>
+            <option>Accountant</option>
+            <option>Driver</option>
+            <option>Teacher</option>
+            <option>Electrician</option>
+        </select>
+    </div>
+    <a href="submit.html">
+    <button onclick="submit">Submit</button>
+    </a>
+    </body>
+</html>

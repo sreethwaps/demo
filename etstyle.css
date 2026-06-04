@@ -1,0 +1,33 @@
+body{
+    background-img:url (pp.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.card-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+}
+.et{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+}
+.card-img-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    object-fit:cover;
+    margin:20px;
+    
+}

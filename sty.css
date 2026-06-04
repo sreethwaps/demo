@@ -1,0 +1,18 @@
+body{
+    background-color: lightpink;
+}
+.container{
+    font-weight: bold; 
+    text-align: center;
+}
+.row{
+    gap: 35px;
+    padding: 20px;
+}
+button{
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 20;
+    border: none;
+    padding: 10px;
+}
