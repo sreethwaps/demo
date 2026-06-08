@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript operations</title>
+</head>
+<body>
+
+<script>
+
+Addition
+const addFunction = (x, y)=>{
+    return x + y;
+}
+
+const addedAnswer = addFunction(20, 30)
+console.log(addedAnswer)
+
+
+//Subtraction
+const subtractFunction = (x, y)=>{
+    return x - y;
+}
+
+const subtractedAnswer = subtractFunction(20, 30)
+console.log(subtractedAnswer)
+
+
+//Division
+const divideFunction = (x, y)=>{
+    return x / y;
+}
+
+const dividedAnswer = divideFunction(20, 10)
+console.log(dividedAnswer)
+
+
+
+
+
+// //forEach loop
+const array = [1, 2, 3, 4, 5]
+
+array.forEach((element)=>{
+    console.log(element)
+})
+
+
+//map method
+const mappedArray = array.map((element)=>{
+    return element + 1
+})
+
+console.log(mappedArray)    
+
+
+
+
+
+
+
+const data = 10
+
+function checkData(params){
+
+    if(params == 10){
+        console.log("Value is 10")
+    }else{
+        console.log("Value is not 10")
+    }
+
+}
+
+checkData(data)
+
+
+
+
+
+//Ternary operator
+data? console.log("Data is truthy") : console.log("Data is falsy")
+
+
+// calculate function 
+const calculate = (x, y, operation)=>{
+    switch(operation){
+        case 'add':
+            return x + y;
+        case 'subtract':
+            return x - y;
+        case 'divide':
+            return x / y;
+        default:
+            return "Invalid operation";
+    }
+}
+
+const result = calculate(20, 10, 'add')
+console.log(result)
+
+</script>
+
+</body>
+</html>

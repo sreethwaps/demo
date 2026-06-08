@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+       Important Array Methods
+
+       push()      // add at end
+       pop()       // remove from end
+       shift()     // remove first
+       unshift()   // add at beginning
+       forEach()   // loop
+       map()       // create new array
+       filter()    // filter data
+       find()      // find one item
+       includes()  // check value exists
+       sort()      // sort array
+
+   /*********************************************/
+
+       Important Object Methods
+
+       Object.keys(obj)
+       Object.values(obj)
+       Object.entries(obj)
+       delete obj.property
+
+
+    <script>
+
+        let fruits = ["Apple", "Banana", "Mango"];
+        console.log(fruits);  // here you can see the array console ["Apple", "Banana", "Mango"] this only 
+        
+        // push() - add item to end
+        fruits.push("Orange");
+        console.log("push:", fruits); // here you can see the array console ["Apple", "Banana", "Mango", "Orange"]
+
+
+        // pop() - remove last item
+        fruits.pop();
+        console.log("pop:", fruits); // here you can see the array console ["Apple", "Banana", "Mango"]
+
+
+        // length
+        console.log("length:", fruits.length); // here you can see the length of the array
+
+        // index access
+        console.log("first fruit:", fruits[0]); // here you can see the first item in the array. if you change the fruits[1] then you can see the second item
+
+
+        // forEach()
+        fruits.forEach(function(item){     // here it is a method for loop. Here you can see the each fruits console one by one.
+            console.log("Fruit:", item);
+        });
+
+        // map()
+        let mapFruits = fruits.map(function(item){ // here it is another type of method for loop. Here you can see the each fruits console one by one.
+            return 
+        });
+
+        console.log("map:", mapFruits);
+
+
+        console.log("===== OBJECTS =====");
+
+        let student = {
+            name: "John",
+            age: 20,
+            course: "BCA"
+        };
+
+        console.log(student); // here it is the object you can see the object console {name: "John", age: 20, course: "BCA"}
+
+        // Access properties
+        console.log(student.name); // here you can see the name of the student console John
+        console.log(student.age);
+
+
+        // Add property
+        student.city = "Delhi";
+        console.log(student); // here you can see the object console {name: "John", age: 20, course: "BCA", city: "Delhi"} city added in the object
+
+        // Update property
+        student.age = 21;
+        console.log(student); // here you can see the object console {name: "John", age: 21, course: "BCA", city: "Delhi"} age changed from 20 to 21
+
+        // Delete property
+        delete student.course;
+        console.log(student); // here you can see the object console {name: "John", age: 21, city: "Delhi"} course deleted from the object
+
+        // Object.keys()
+        console.log("Keys:", Object.keys(student)); // here you can see the keys of the object console ["name", "age", "city"]
+
+        // Object.values()
+        console.log("Values:", Object.values(student)); // here you can see the values of the object console ["John", 21, "Delhi"]
+
+        // Object.entries()
+        console.log("Entries:", Object.entries(student)); // here you can see the entries of the object console [["name", "John"], ["age", 21], ["city", "Delhi"]]
+
+
+        console.log("===== ARRAY OF OBJECTS =====");
+
+        let users = [
+            {name: "John", age: 20},
+            {name: "Sara", age: 25},
+            {name: "Mike", age: 30}
+        ];                              // here it is the array of objects you can see the array console [{name: "John", age: 20}, {name: "Sara", age: 25}, {name: "Mike", age: 30}]
+
+        users.forEach(function(user){
+            console.log(user.name, user.age);   // here you can see the name and age of each user console John 20, Sara 25, Mike 30
+        });
+
+    </script>
+
+</body>
+</html>
